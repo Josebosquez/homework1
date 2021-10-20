@@ -10,9 +10,9 @@ function dataProvider(selectorFuction){
 var fetchData = () => new Promise((resolve, reject) => {
   console.log('fetchingData from imaginary database')
   setTimeout(() => {
-       try {
+        try {
          // fetchingData from imaginary database
-         resolve({name: 'john', age:42})
+          resolve({name: 'john', age:42})
         } catch(error) {
           reject(error);
         }

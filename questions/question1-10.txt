@@ -2,23 +2,40 @@ Questionnaire:
 
 1. What are javascript functions?
 
-2. Explain call-back functions in your own words.
+    -- Javascript functions are a set of statements.  They are used to manipulate data, as well as the ability to manipulate the page, i.e., clicking buttons, redirecting to another page, and changing a background color. 
+
+2. Explain call-back functions in your own words. 
+
+    -- Callback functions are placed inside of other functions as arguments. They are called when a certain condition is met after the main function was called. 
 
 3. Why are javascript functions first-class citizens? (in your own words, please)
 
+    -- They can be treated as values.  When i assign a function as a value, im able to assign it to another function as an argument.
+
 4. Explain javascript Closures in your own words.
 
-5. When/Why do you use the .then() method of a promise?
+    -- Its a function within a function that can be called by that function or a different function thats not nested. Func A can have func b inside of it. Func c is not within Func a, but func c's value could = func a so (var function C = function-A() ).
+
+5. When/Why do you use the .then() method of a promise? 
+
+    -- We use this method when we want a response, but it can be delayed (which is why its called a promise to be returned). The returned data could be a error or the data we want. 
 
 6. When/Why do you use the .catch() method of a promise?
 
+    -- Catch methods are used when we want an error to be captured and returned to the user. When we receive an error, it stops the function from running. 
+
 7. What is the spread operator?
 
+    -- A spread operator is used to display all of the data in an array/object. We will separate them individually, vice grouping them into an array.
 
 8. What is the rest operator?
 
+    -- Similar to a spread operator, we want to display all of our information. However, we will be converting the returned data into an array.
 
-9. What is the difference between the rest operator and the spead operator?
+9. What is the difference between the rest operator and the spread operator?
 
+    -- We separate the spread operator into individual parts, we group the rest operator into an array while displaying the information all at once.
 
 10. What is Object and Array Destructuring in javascript?
+
+    -- Basically, it allows us to grab something from a box and use it specifically without having to carry the box with us the entire time. Our hands would be full depending on how much material is in each box. To avoid that, we can use object and array destructuring to carry only what we want when we want it or have it readily accessible. 
