@@ -11,10 +11,21 @@ const {fetchData} = require('../fancyLibrary')
 // 1. Call fetchData (which returns a promise) and use the .then()  method to log the value the promise resolves with to the javascript console.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+fetchData()
+.then((value)=>{
+    console.log(value)
+})
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 2. Call fetchData (which returns a promise) and use the async/await method to log the value the promise resolves with to the javascript console.
+
+const asyncMethod = async () => {
+    let data = await fetchData();
+    try {
+        console.log("data:", data);
+    } catch (e) {
+        console.log(e);
+    }
+};
+
+asyncMethod();
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-// Once you have grabbed the favorite foods. Descontrusct the food array to grab only the first 2 values.
